@@ -1,6 +1,10 @@
+/* This is the engine that fetches the websites for you */
 self.__uv$config = {
     prefix: '/uv/service/',
-    bare: 'https://bare.benroxy.me/',
+    
+    /* Using a 2026-active public bare server */
+    bare: 'https://uv.student-portal.workers.dev/', 
+    
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/uv/uv.handler.js',
